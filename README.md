@@ -1,7 +1,7 @@
 # ZadanieTreningowe
 
-Projekt zajmuje się importem danych z xls, zapisem w bazie oraz mailowym poinformowanie użytkowanika o zainstaniałej akcji.
-W celach ćwiczeniawych zastosowałem podejście DDD aby pokazać przedwszytkim metodykę mojej pracy a nie jedynie uzyskać rozwiązanie problemu.
+Projekt zajmuje się importem danych z xls, zapisem w bazie oraz mailowym poinformowaniem użytkownika o zaistniałej akcji.
+W celach ćwiczeniowych zastosowałem podejście DDD, aby pokazać przede wszystkim metodykę mojej pracy, a nie jedynie uzyskanie rozwiązania problemu.
 
 Testy zostaną wprowadzone w kolejnej wersji.
 
