@@ -1,10 +1,9 @@
 # ZadanieTreningowe
 
- 
-Niestety nie wyrobiłem się z testami oraz filtrowaniem tabeli. Natomiast import plików, wyświetlanie oraz mailer działają prawidłowo.
-Zadanie potraktowałem bardziej jako moje aktualne podejście do programowania nie tylko jako samo rozwiązanie problemu. Mam pełną
-świadomość że w tym wypadku wytoczyłem działa do mrówki natomiast wnioskuję żę celem samego zadania nie była tylko działająca funkcjonalnośc,
-ale przedewszytkim sprawdzenie moich umiejętności oraz podejścia do programowania.
+Projekt zajmuje się importem danych z xls, zapisem w bazie oraz mailowym poinformowanie użytkowanika o zainstaniałej akcji.
+W celach ćwiczeniawych zastosowałem podejście DDD aby pokazać przedwszytkim metodykę mojej pracy a nie jedynie uzyskać rozwiązanie problemu.
+
+Testy zostaną wprowadzone w kolejnej wersji.
 
 # Preinstallation
 
