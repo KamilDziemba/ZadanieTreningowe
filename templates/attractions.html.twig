@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="row">
+    <table class="table table-light table-hover">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">City</th>
+            <th scope="col">Street</th>
+            <th scope="col">Year</th>
+            <th scope="col">Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for attraction in attractions %}
+            <tr>
+                <th scope="row">{{ loop.index }}</th>
+                <td>{{ attraction.city }}</td>
+                <td>{{ attraction.street }}</td>
+                <td>{{ attraction.year }}</td>
+                <td>{{ attraction.name }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        {% block body %}
+                <select name="selected_city" class="form-control" id="cities">
+                    {% for city in cities %}
+                        <option value="{{ city.name }}" selected>{{ city.name }}</option>
+                    {% endfor %}
+                </select>
+                <select name="selected_year" class="form-control" id="year">
+                    {% for year in years %}
+                        <option value="{{ year.name }}">{{ year.name }}</option>
+                    {% endfor %}
+                </select>
+            <a href="{{ path('get_street_params',{'value': selected_city}) }}">next step</a>
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
