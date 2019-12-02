@@ -1,6 +1,6 @@
 # ZadanieTreningowe
 
-Pare słów od Autora. 
+ 
 Niestety nie wyrobiłem się z testami oraz filtrowaniem tabeli. Natomiast import plików, wyświetlanie oraz mailer działają prawidłowo.
 Zadanie potraktowałem bardziej jako moje aktualne podejście do programowania nie tylko jako samo rozwiązanie problemu. Mam pełną
 świadomość że w tym wypadku wytoczyłem działa do mrówki natomiast wnioskuję żę celem samego zadania nie była tylko działająca funkcjonalnośc,
