@@ -55,9 +55,11 @@ class ImportDataHandler
      * @throws \Doctrine\ORM\OptimisticLockException
      * @throws \PHPExcel_Exception
      * @throws \PHPExcel_Reader_Exception
+     * @return int
      */
     public function handle(ImportDataCommand $importDataCommand)
     {
+        $recordsCreated = 0;
         $filePath = $importDataCommand->getFilePath();
         $importDataArray = $this->importDataReader->read($filePath);
 
@@ -65,7 +67,8 @@ class ImportDataHandler
         foreach ($importDataArray as $importData){
             try{
                 $attraction = $this->attractionService->prepareAndCreateAttraction($importData);
-                $this->entityManager->persist($attraction); 
+                $this->entityManager->persist($attraction);
+                $recordsCreated++;
             }
             catch (\Exception $exception){
                 $message = sprintf('Attraction creation failed because of %s ', $exception);
@@ -74,5 +77,7 @@ class ImportDataHandler
             
         }
         $this->entityManager->flush();
+
+        return $recordsCreated;
     }
 }

@@ -6,7 +6,9 @@ namespace App\Attractions\Application\Service;
 
 use App\Attractions\Application\Model\ImportData;
 use App\Attractions\Domain\AttractionCreation\AttractionFactory;
+use App\Attractions\Domain\AttractionCreation\CityFactory;
 use App\Attractions\Domain\AttractionCreation\StreetFactory;
+use App\Attractions\Domain\AttractionCreation\YearFactory;
 use App\Attractions\Domain\Entity\Attractions;
 use App\Attractions\Domain\Entity\City;
 use App\Attractions\Domain\Entity\Street;
@@ -50,6 +52,16 @@ class AttractionService
     private $streetFactory;
 
     /**
+     * @var CityFactory
+     */
+    private $cityFactory;
+
+    /**
+     * @var YearFactory
+     */
+    private $yearFactory;
+
+    /**
      * AttractionService constructor.
      * @param CityRepository $cityRepository
      * @param YearRepository $yearRepository
@@ -57,6 +69,8 @@ class AttractionService
      * @param AttractionRepository $attractionRepository
      * @param AttractionFactory $attractionFactory
      * @param StreetFactory $streetFactory
+     * @param CityFactory $cityFactory
+     * @param YearFactory $yearFactory
      */
     public function __construct(
         CityRepository $cityRepository,
@@ -64,7 +78,9 @@ class AttractionService
         StreetRepository $streetRepository,
         AttractionRepository $attractionRepository,
         AttractionFactory $attractionFactory,
-        StreetFactory $streetFactory
+        StreetFactory $streetFactory,
+        CityFactory $cityFactory,
+        YearFactory $yearFactory
     )
     {
         $this->cityRepository = $cityRepository;
@@ -73,6 +89,8 @@ class AttractionService
         $this->attractionRepository = $attractionRepository;
         $this->attractionFactory = $attractionFactory;
         $this->streetFactory = $streetFactory;
+        $this->cityFactory = $cityFactory;
+        $this->yearFactory = $yearFactory;
     }
 
 
@@ -87,7 +105,7 @@ class AttractionService
     {
         $city = $this->cityRepository->findByName($importData->getCity());
         if (empty($city)){
-            $city = new City($importData->getCity());
+            $city = $this->cityFactory->createCity($importData->getCity());
         }
 
         $street = $this->streetRepository->findByName($importData->getCity());
@@ -96,7 +114,7 @@ class AttractionService
         }
         $year = $this->yearRepository->findByName($importData->getYear());
         if (empty($year)){
-            $year = new Year($importData->getYear());
+            $year = $this->yearFactory->createYear($importData->getYear());
         }
         $createdAttraction = $this->attractionFactory->createAttraction(
             $importData->getAttraction(),
