@@ -57,7 +57,7 @@ class ImportDataHandler
      * @throws \PHPExcel_Reader_Exception
      * @return int
      */
-    public function handle(ImportDataCommand $importDataCommand)
+    public function handle(ImportDataCommand $importDataCommand): int
     {
         $recordsCreated = 0;
         $filePath = $importDataCommand->getFilePath();

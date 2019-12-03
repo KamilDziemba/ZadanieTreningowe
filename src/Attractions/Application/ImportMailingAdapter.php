@@ -5,7 +5,7 @@ namespace App\Attractions\Application;
 
 use App\Shared\Mailing\MailDetails;
 
-class ImportDataMailingAdapter
+class ImportMailingAdapter
 {
     const SENDER_EMAIL = 'ztestowe68@gmail.com';
     const RECEIVER_EMAIL = 'kamil.dziemba@gmail.com';

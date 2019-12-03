@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b9edc87-30e9-45d9-b4a3-302984cc1435" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Attractions/Application/ImportDataMailingAdapter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Attractions/Domain/AttractionCreation/CityFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Attractions/Domain/AttractionCreation/YearFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Mailing/MailBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Mailing/MailDetails.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shared/Mailing/MailService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ZadanieTreningowe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ZadanieTreningowe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Attractions/Application/ImportDataHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Application/ImportDataHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Application/Service/AttractionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Application/Service/AttractionService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Infrastructure/ImportExcelFileCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Infrastructure/ImportExcelFileCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/UI/Http/Web/AttractionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/UI/Http/Web/AttractionsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/UI/Model/Response/City.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/UI/Model/Response/Street.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/UI/Model/Response/Year.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/UI/Repository/FilterRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/UI/Service/FilterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/street.html.twig" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,19 +38,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1276">
-              <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Attractions/Application/ImportDataHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1410">
-              <caret line="80" column="19" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
+            <state relative-caret-position="1323">
+              <caret line="59" column="70" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
               <folding>
                 <element signature="e#74#123#0#PHP" expanded="true" />
               </folding>
@@ -178,9 +145,9 @@
         <option value="$PROJECT_DIR$/src/Shared/Mailing/MailBuilder.php" />
         <option value="$PROJECT_DIR$/src/Shared/Mailing/MailService.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/src/Attractions/Application/ImportDataHandler.php" />
         <option value="$PROJECT_DIR$/src/Attractions/Application/ImportDataMailingAdapter.php" />
         <option value="$PROJECT_DIR$/src/Attractions/Infrastructure/ImportExcelFileCommand.php" />
+        <option value="$PROJECT_DIR$/src/Attractions/Application/ImportDataHandler.php" />
       </list>
     </option>
   </component>
@@ -391,12 +358,12 @@
       <workItem from="1575146818566" duration="4284000" />
       <workItem from="1575159716626" duration="358000" />
       <workItem from="1575161080335" duration="4150000" />
-      <workItem from="1575206358568" duration="49497000" />
+      <workItem from="1575206358568" duration="50165000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58289000" />
+    <option name="totallyTimeSpent" value="58957000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="35" width="3840" height="2007" extended-state="6" />
@@ -789,16 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Attractions/Application/ImportDataHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="80" column="19" selection-start-line="80" selection-start-column="19" selection-end-line="80" selection-end-column="19" />
-          <folding>
-            <element signature="e#74#123#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Attractions/Infrastructure/ImportExcelFileCommand.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1294">
@@ -810,6 +767,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1276">
           <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Attractions/Application/ImportDataHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="59" column="70" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
+          <folding>
+            <element signature="e#74#123#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

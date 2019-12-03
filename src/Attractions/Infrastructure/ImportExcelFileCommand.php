@@ -7,7 +7,7 @@ namespace App\Attractions\Infrastructure;
 
 use App\Attractions\Application\ImportDataCommand;
 use App\Attractions\Application\ImportDataHandler;
-use App\Attractions\Application\ImportDataMailingAdapter;
+use App\Attractions\Application\ImportMailingAdapter;
 use App\Shared\Exception\InvalidArgumentException;
 use App\Shared\Mailing\MailService;
 use Symfony\Component\Console\Command\Command;
@@ -36,28 +36,28 @@ class ImportExcelFileCommand extends Command
     private $mailService;
 
     /**
-     * @var ImportDataMailingAdapter
+     * @var ImportMailingAdapter
      */
-    private $importDataMailingAdapter;
+    private $importMailingAdapter;
 
     /**
      * ImportExcelFileCommand constructor.
      * @param string $projectDir
      * @param ImportDataHandler $importDataHandler
      * @param MailService $mailService
-     * @param ImportDataMailingAdapter $importDataMailingAdapter
+     * @param ImportMailingAdapter $importMailingAdapter
      */
     public function __construct(
         string $projectDir,
         ImportDataHandler $importDataHandler,
         MailService $mailService,
-        ImportDataMailingAdapter $importDataMailingAdapter
+        ImportMailingAdapter $importMailingAdapter
     )
     {
         $this->projectDir = $projectDir;
         $this->importDataHandler = $importDataHandler;
         $this->mailService = $mailService;
-        $this->importDataMailingAdapter = $importDataMailingAdapter;
+        $this->importMailingAdapter = $importMailingAdapter;
         parent::__construct();
     }
 
@@ -82,7 +82,7 @@ class ImportExcelFileCommand extends Command
      * @throws \PHPExcel_Reader_Exception
      * @throws \Symfony\Component\Mailer\Exception\TransportExceptionInterface
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $filePath = $input->getArgument('filePath');
         $basePath = sprintf('%s/var/imports/%s', $this->projectDir, $filePath);
@@ -94,7 +94,7 @@ class ImportExcelFileCommand extends Command
         $importDataCommand = new ImportDataCommand($basePath);
         $recordsCreated = $this->importDataHandler->handle($importDataCommand);
 
-        $mailDetail = $this->importDataMailingAdapter->adapt($recordsCreated);
+        $mailDetail = $this->importMailingAdapter->adapt($recordsCreated);
         $this->mailService->sendEmail($mailDetail);
 
 
