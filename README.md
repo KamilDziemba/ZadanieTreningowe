@@ -61,11 +61,13 @@ bin/console d:s:u --force
 ## Preparing import file
 
 To import file copy it to:
+```
 cp source var/imports/filename.xlsx
-
+```
 Then use command:
+```
 bin/console app:import-excel filename.xlsx
-
+```
 ```
 
 ## Voilla
