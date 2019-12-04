@@ -38,7 +38,7 @@ Execute following in bash:
 
 ```shell
 # enter the container
-docker-compose exec sf4_php bash
+docker exec -it sf4_php bash
 
 #install dependencies
 composer install
