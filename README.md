@@ -51,6 +51,9 @@ composer install
 chmod -R 777 var/log
 chmod -R 777 var/cache
 
+#create import folder
+mkdir /var/imports
+
 # create and update database schema, load fixtures
 bin/console d:s:u --force
 ```
@@ -58,7 +61,7 @@ bin/console d:s:u --force
 ## Preparing import file
 
 To import file copy it to:
-var/imports/
+cp source var/imports/filename.xlsx
 
 Then use command:
 bin/console app:import-excel filename.xlsx
