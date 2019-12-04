@@ -40,6 +40,10 @@ Execute following in bash:
 # enter the container
 docker exec -it sf4_php bash
 
+then
+
+cd sf4
+
 #install dependencies
 composer install
 
