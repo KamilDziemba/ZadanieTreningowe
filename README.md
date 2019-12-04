@@ -62,7 +62,7 @@ bin/console d:s:u --force
 
 To import file copy it to:
 ```
-cp source var/imports/filename.xlsx
+cp source ZadanieTreningowe/var/imports/filename.xlsx
 ```
 Then use command:
 ```
