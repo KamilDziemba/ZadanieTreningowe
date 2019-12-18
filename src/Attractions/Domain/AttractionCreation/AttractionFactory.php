@@ -1,8 +1,8 @@
 <?php
 
-declare(strict_types = 1);
-namespace App\Attractions\Domain\AttractionCreation;
+declare(strict_types=1);
 
+namespace App\Attractions\Domain\AttractionCreation;
 
 use App\Attractions\Domain\Entity\Attractions;
 use App\Attractions\Domain\Entity\City;
@@ -23,8 +23,7 @@ class AttractionFactory
         City $city,
         Street $street,
         Year $year
-    ): Attractions
-    {
+    ): Attractions {
         return new Attractions(
             $name,
             $year,

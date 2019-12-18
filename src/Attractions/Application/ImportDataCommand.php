@@ -1,8 +1,8 @@
 <?php
 
-declare(strict_types = 1);
-namespace App\Attractions\Application;
+declare(strict_types=1);
 
+namespace App\Attractions\Application;
 
 class ImportDataCommand
 {
@@ -13,16 +13,12 @@ class ImportDataCommand
 
     /**
      * ImportDataCommand constructor.
-     * @param string $filePath
      */
     public function __construct(string $filePath)
     {
         $this->filePath = $filePath;
     }
 
-    /**
-     * @return string
-     */
     public function getFilePath(): string
     {
         return $this->filePath;

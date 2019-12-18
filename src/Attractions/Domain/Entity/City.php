@@ -13,9 +13,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class City
 {
-
     /**
-     * @var integer
+     * @var int
      * @ORM\Id()
      * @ORM\GeneratedValue(strategy="AUTO")
      * @ORM\Column(type="integer")
@@ -30,28 +29,19 @@ class City
 
     /**
      * City constructor.
-     * @param string $name
      */
     public function __construct(string $name)
     {
         $this->name = $name;
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
-
-
 }

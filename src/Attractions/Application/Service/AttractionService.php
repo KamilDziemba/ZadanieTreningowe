@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Attractions\Application\Service;
-
 
 use App\Attractions\Application\Model\ImportData;
 use App\Attractions\Domain\AttractionCreation\AttractionFactory;
@@ -10,9 +8,6 @@ use App\Attractions\Domain\AttractionCreation\CityFactory;
 use App\Attractions\Domain\AttractionCreation\StreetFactory;
 use App\Attractions\Domain\AttractionCreation\YearFactory;
 use App\Attractions\Domain\Entity\Attractions;
-use App\Attractions\Domain\Entity\City;
-use App\Attractions\Domain\Entity\Street;
-use App\Attractions\Domain\Entity\Year;
 use App\Attractions\Infrastructure\Repository\AttractionRepository;
 use App\Attractions\Infrastructure\Repository\CityRepository;
 use App\Attractions\Infrastructure\Repository\StreetRepository;
@@ -63,14 +58,6 @@ class AttractionService
 
     /**
      * AttractionService constructor.
-     * @param CityRepository $cityRepository
-     * @param YearRepository $yearRepository
-     * @param StreetRepository $streetRepository
-     * @param AttractionRepository $attractionRepository
-     * @param AttractionFactory $attractionFactory
-     * @param StreetFactory $streetFactory
-     * @param CityFactory $cityFactory
-     * @param YearFactory $yearFactory
      */
     public function __construct(
         CityRepository $cityRepository,
@@ -81,8 +68,7 @@ class AttractionService
         StreetFactory $streetFactory,
         CityFactory $cityFactory,
         YearFactory $yearFactory
-    )
-    {
+    ) {
         $this->cityRepository = $cityRepository;
         $this->yearRepository = $yearRepository;
         $this->streetRepository = $streetRepository;
@@ -93,10 +79,7 @@ class AttractionService
         $this->yearFactory = $yearFactory;
     }
 
-
     /**
-     * @param ImportData $importData
-     * @return Attractions
      * @throws InvalidArgumentException
      * @throws \Doctrine\ORM\NoResultException
      * @throws \Doctrine\ORM\NonUniqueResultException
@@ -104,16 +87,16 @@ class AttractionService
     public function prepareAndCreateAttraction(ImportData $importData): Attractions
     {
         $city = $this->cityRepository->findByName($importData->getCity());
-        if (empty($city)){
+        if (empty($city)) {
             $city = $this->cityFactory->createCity($importData->getCity());
         }
 
         $street = $this->streetRepository->findByName($importData->getCity());
-        if (empty($street)){
+        if (empty($street)) {
             $street = $this->streetFactory->createStreet($importData->getStreet(), $city);
         }
         $year = $this->yearRepository->findByName($importData->getYear());
-        if (empty($year)){
+        if (empty($year)) {
             $year = $this->yearFactory->createYear($importData->getYear());
         }
         $createdAttraction = $this->attractionFactory->createAttraction(
@@ -124,9 +107,10 @@ class AttractionService
         );
 
         $attraction = $this->attractionRepository->findIfAttractionExist($createdAttraction);
-        if (sizeof($attraction) != 0){
+        if (0 != sizeof($attraction)) {
             throw new InvalidArgumentException(sprintf('Attraction already exist %s', $importData->getAttraction()));
         }
+
         return $createdAttraction;
     }
 }

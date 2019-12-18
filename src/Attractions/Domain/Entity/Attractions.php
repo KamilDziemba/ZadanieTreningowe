@@ -1,10 +1,10 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
+
 namespace App\Attractions\Domain\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
 
 /**
  * @ORM\Entity()
@@ -13,9 +13,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Attractions
 {
-
     /**
-     * @var integer
+     * @var int
      * @ORM\Id()
      * @ORM\GeneratedValue(strategy="AUTO")
      * @ORM\Column(type="integer")
@@ -57,10 +56,7 @@ class Attractions
 
     /**
      * Attractions constructor.
-     * @param string $name
-     * @param Year $year
-     * @param City $city
-     * @param Street $street
+     *
      * @throws
      */
     public function __construct(
@@ -68,8 +64,7 @@ class Attractions
         Year $year,
         City $city,
         Street $street
-    )
-    {
+    ) {
         $this->name = $name;
         $this->year = $year;
         $this->city = $city;
@@ -77,53 +72,33 @@ class Attractions
         $this->createdAt = new \DateTime();
     }
 
-    /**
-     * @return int
-     */
     public function getId(): int
     {
         return $this->id;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return Year
-     */
     public function getYear(): Year
     {
         return $this->year;
     }
 
-    /**
-     * @return City
-     */
     public function getCity(): City
     {
         return $this->city;
     }
 
-    /**
-     * @return Street
-     */
     public function getStreet(): Street
     {
         return $this->street;
     }
 
-    /**
-     * @return \DateTime
-     */
     public function getCreatedAt(): \DateTime
     {
         return $this->createdAt;
     }
-
-
 }

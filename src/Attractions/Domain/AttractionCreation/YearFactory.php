@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 
 namespace App\Attractions\Domain\AttractionCreation;
 
@@ -8,12 +8,12 @@ use App\Attractions\Domain\Entity\Year;
 class YearFactory
 {
     /**
-     * @param string $name
+     * @param int $name
      * @return Year
      */
     public function createYear(
         int $name
-    ):Year
+    ): Year
     {
         return new Year(
             $name

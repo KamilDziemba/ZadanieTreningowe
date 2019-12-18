@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\Attractions\Infrastructure;
 
-
 use App\Attractions\Application\ImportDataMapper\ImportDataMapper;
 use App\Shared\Exception\InvalidFileContentException;
 
@@ -17,7 +16,6 @@ class ExcelDataReader
 
     /**
      * ExcelDataReader constructor.
-     * @param ImportDataMapper $importDataMapper
      */
     public function __construct(ImportDataMapper $importDataMapper)
     {
@@ -25,8 +23,6 @@ class ExcelDataReader
     }
 
     /**
-     * @param string $filePath
-     * @return array
      * @throws \PHPExcel_Exception
      * @throws \PHPExcel_Reader_Exception
      * @throws InvalidFileContentException
@@ -40,7 +36,7 @@ class ExcelDataReader
         $sheet = $file->getActiveSheet();
         $array = $sheet->toArray();
 
-        if (empty($array)){
+        if (empty($array)) {
             throw new InvalidFileContentException('Imported file have invalid values in sheet');
         }
 
@@ -48,13 +44,10 @@ class ExcelDataReader
         foreach ($importArray as $row) {
             $importDataArray[] = $this->importDataMapper->createImportData($row);
         }
+
         return $importDataArray;
     }
 
-    /**
-     * @param array $array
-     * @return array
-     */
     private function mapKeysWithHeadings(array $array): array
     {
         $headings = array_shift($array);

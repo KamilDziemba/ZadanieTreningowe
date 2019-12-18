@@ -1,8 +1,8 @@
 <?php
 
-declare(strict_types = 1);
-namespace App\Attractions\Domain\AttractionCreation;
+declare(strict_types=1);
 
+namespace App\Attractions\Domain\AttractionCreation;
 
 use App\Attractions\Domain\Entity\City;
 
@@ -14,7 +14,7 @@ class CityFactory
      */
     public function createCity(
         string $name
-    ):City
+    ): City
     {
         return new City(
             $name

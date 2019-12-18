@@ -4,13 +4,11 @@ declare(strict_types=1);
 
 namespace App\Attractions\Application;
 
-
 use App\Attractions\Application\Model\ImportData;
 use App\Attractions\Application\Service\AttractionService;
 use App\Attractions\Infrastructure\ExcelDataReader;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
-
 
 class ImportDataHandler
 {
@@ -34,14 +32,12 @@ class ImportDataHandler
      */
     private $logger;
 
-
     public function __construct(
         ExcelDataReader $importDataReader,
         AttractionService $attractionService,
         EntityManagerInterface $entityManager,
         LoggerInterface $logger
-    )
-    {
+    ) {
         $this->importDataReader = $importDataReader;
         $this->attractionService = $attractionService;
         $this->entityManager = $entityManager;
@@ -49,13 +45,11 @@ class ImportDataHandler
     }
 
     /**
-     * @param ImportDataCommand $importDataCommand
      * @throws \App\Shared\Exception\InvalidFileContentException
      * @throws \Doctrine\ORM\ORMException
      * @throws \Doctrine\ORM\OptimisticLockException
      * @throws \PHPExcel_Exception
      * @throws \PHPExcel_Reader_Exception
-     * @return int
      */
     public function handle(ImportDataCommand $importDataCommand): int
     {
@@ -64,17 +58,15 @@ class ImportDataHandler
         $importDataArray = $this->importDataReader->read($filePath);
 
         /** @var ImportData $importData */
-        foreach ($importDataArray as $importData){
-            try{
+        foreach ($importDataArray as $importData) {
+            try {
                 $attraction = $this->attractionService->prepareAndCreateAttraction($importData);
                 $this->entityManager->persist($attraction);
-                $recordsCreated++;
-            }
-            catch (\Exception $exception){
+                ++$recordsCreated;
+            } catch (\Exception $exception) {
                 $message = sprintf('Attraction creation failed because of %s ', $exception);
                 $this->logger->info($message);
             }
-            
         }
         $this->entityManager->flush();
 

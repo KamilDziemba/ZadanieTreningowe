@@ -6,8 +6,14 @@
 /public/bundles/
 /var/
 /vendor/
+/.idea
 ###< symfony/framework-bundle ###
 
 ###> docker ###
 .docker/data/*
 ###< docker ###
+
+###> friendsofphp/php-cs-fixer ###
+/.php_cs
+/.php_cs.cache
+###< friendsofphp/php-cs-fixer ###

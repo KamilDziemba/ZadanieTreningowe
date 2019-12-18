@@ -24,19 +24,11 @@ class StreetRepository extends AbstractEntityRepository implements StreetReposit
         $this->entityRepository = $entityManager->getRepository(Street::class);
     }
 
-    /**
-     * @param string $name
-     * @return Street|null
-     */
     public function findByName(string $name): ?Street
     {
         return $this->entityRepository->findOneBy(['name' => $name]);
     }
 
-    /**
-     * @param string|null $city
-     * @return array|null
-     */
     public function findAllDistinct(string $city = null): ?array
     {
         $qb = $this->entityManager
@@ -47,7 +39,7 @@ class StreetRepository extends AbstractEntityRepository implements StreetReposit
             ->distinct('st.name')
             ->orderBy('st.name');
 
-        if (!empty($city)){
+        if (!empty($city)) {
             $qb->andWhere('city.name = :city')
                 ->setParameter('city', $city);
         }
@@ -55,9 +47,6 @@ class StreetRepository extends AbstractEntityRepository implements StreetReposit
         return $qb->getQuery()->getResult();
     }
 
-    /**
-     * @param Street $street
-     */
     public function save(Street $street): void
     {
         // TODO: Implement save() method.

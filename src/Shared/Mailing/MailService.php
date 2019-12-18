@@ -1,8 +1,8 @@
 <?php
 
-declare(strict_types = 1);
-namespace App\Shared\Mailing;
+declare(strict_types=1);
 
+namespace App\Shared\Mailing;
 
 use Symfony\Component\Mailer\MailerInterface;
 
@@ -30,7 +30,6 @@ class MailService
     }
 
     /**
-     * @param MailDetails $mailDetails
      * @throws \Symfony\Component\Mailer\Exception\TransportExceptionInterface
      */
     public function sendEmail(MailDetails $mailDetails)

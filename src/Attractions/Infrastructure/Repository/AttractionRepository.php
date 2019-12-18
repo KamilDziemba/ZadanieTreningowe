@@ -17,6 +17,10 @@ class AttractionRepository extends AbstractEntityRepository implements Attractio
      */
     private $entityRepository;
 
+    /**
+     * AttractionRepository constructor.
+     * @param EntityManagerInterface $entityManager
+     */
     public function __construct(EntityManagerInterface $entityManager)
     {
         parent::__construct($entityManager);
@@ -34,30 +38,27 @@ class AttractionRepository extends AbstractEntityRepository implements Attractio
     }
 
     /**
-     * @param string|null $city
-     * @param string|null $street
-     * @param int|null $year
      * @return Attractions[]
      */
     public function findAllWithFilters(?string $city, ?string $street, ?int $year): array
     {
-         $qb = $this->entityManager->createQueryBuilder()
-             ->select('at')
-             ->from('App\Attractions\Domain\Entity\Attractions', 'at');
+        $qb = $this->entityManager->createQueryBuilder()
+            ->select('at')
+            ->from('App\Attractions\Domain\Entity\Attractions', 'at');
 
-         if (!empty($city)){
-             $qb->leftJoin('at.city', 'city')
-                 ->andWhere('city.name = :city')
-                 ->setParameter('city', $city);
-         }
+        if (!empty($city)) {
+            $qb->leftJoin('at.city', 'city')
+                ->andWhere('city.name = :city')
+                ->setParameter('city', $city);
+        }
 
-        if (!empty($year)){
+        if (!empty($year)) {
             $qb->leftJoin('at.year', 'year')
                 ->andWhere('year.name = :year')
                 ->setParameter('year', $year);
         }
 
-        if (!empty($street)){
+        if (!empty($street)) {
             $qb->leftJoin('at.street', 'street')
                 ->andWhere('street.name = :street')
                 ->setParameter('street', $street);
@@ -67,7 +68,6 @@ class AttractionRepository extends AbstractEntityRepository implements Attractio
     }
 
     /**
-     * @param Attractions $attraction
      * @return Attractions[]|null
      */
     public function findIfAttractionExist(Attractions $attraction): ?array
@@ -87,7 +87,6 @@ class AttractionRepository extends AbstractEntityRepository implements Attractio
             ->setParameter('year', $attraction->getYear()->getName())
             ->setParameter('street', $attraction->getStreet()->getName());
 
-
         return $qb->getQuery()->getResult();
     }
 
@@ -99,9 +98,6 @@ class AttractionRepository extends AbstractEntityRepository implements Attractio
         return $this->entityRepository->findAll();
     }
 
-    /**
-     * @param Attractions $attractions
-     */
     public function save(Attractions $attractions): void
     {
         // TODO: Implement save() method.

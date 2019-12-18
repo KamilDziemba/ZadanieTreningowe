@@ -1,8 +1,8 @@
 <?php
 
-declare(strict_types = 1);
-namespace App\Attractions\UI\Repository;
+declare(strict_types=1);
 
+namespace App\Attractions\UI\Repository;
 
 use App\Attractions\Domain\Entity\Attractions as AttractionEntity;
 use App\Attractions\Domain\Repository\AttractionRepositoryInterface;
@@ -15,6 +15,10 @@ class AttractionRepository
      */
     private $attractionRepository;
 
+    /**
+     * AttractionRepository constructor.
+     * @param AttractionRepositoryInterface $attractionRepository
+     */
     public function __construct(AttractionRepositoryInterface $attractionRepository)
     {
         $this->attractionRepository = $attractionRepository;
@@ -24,7 +28,7 @@ class AttractionRepository
      * @param string|null $city
      * @param string|null $street
      * @param int|null $year
-     * @return Attraction[]
+     * @return array
      */
     public function getAttractionsWithFilters(?string $city, ?string $street, ?int $year): array
     {
@@ -39,6 +43,4 @@ class AttractionRepository
             );
         }, $attractions);
     }
-
-
 }

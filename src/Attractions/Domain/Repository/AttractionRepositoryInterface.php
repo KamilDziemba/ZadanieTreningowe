@@ -1,8 +1,8 @@
 <?php
 
+declare(strict_types=1);
 
 namespace App\Attractions\Domain\Repository;
-
 
 use App\Attractions\Domain\Entity\Attractions;
 use App\Shared\Domain\Repository\AbstractEntityRepositoryInterface;
@@ -14,10 +14,8 @@ interface AttractionRepositoryInterface extends AbstractEntityRepositoryInterfac
 
     /**
      * @param string $name
-     *
-     * @throws ResourceNotFoundException
-     *
      * @return Attractions|null
+     * @throws ResourceNotFoundException
      */
     public function findByName(string $name): ?Attractions;
 

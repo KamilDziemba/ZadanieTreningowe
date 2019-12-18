@@ -24,15 +24,9 @@ class CityRepository extends AbstractEntityRepository implements CityRepositoryI
         $this->entityRepository = $entityManager->getRepository(City::class);
     }
 
-
-    /**
-     * @param string $name
-     * @return City|null
-     */
     public function findByName(string $name): ?City
     {
         return $this->entityRepository->findOneBy(['name' => $name]);
-
     }
 
     /**
@@ -50,9 +44,6 @@ class CityRepository extends AbstractEntityRepository implements CityRepositoryI
         return $qb->getQuery()->getResult();
     }
 
-    /**
-     * @param City $city
-     */
     public function save(City $city): void
     {
         // TODO: Implement save() method.

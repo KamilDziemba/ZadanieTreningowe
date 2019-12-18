@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Attractions\UI\Model\Response;
-
 
 class Attraction
 {
@@ -28,10 +26,6 @@ class Attraction
 
     /**
      * Attraction constructor.
-     * @param string $name
-     * @param string $city
-     * @param string $street
-     * @param int $year
      */
     public function __construct(string $name, string $city, string $street, int $year)
     {
@@ -41,33 +35,21 @@ class Attraction
         $this->year = $year;
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return string
-     */
     public function getCity(): string
     {
         return $this->city;
     }
 
-    /**
-     * @return string
-     */
     public function getStreet(): string
     {
         return $this->street;
     }
 
-    /**
-     * @return int
-     */
     public function getYear(): int
     {
         return $this->year;

@@ -1,8 +1,8 @@
 <?php
 
+declare(strict_types=1);
 
 namespace App\Shared\Mailing;
-
 
 use Symfony\Component\Mime\Email;
 
