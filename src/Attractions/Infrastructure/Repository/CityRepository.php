@@ -17,6 +17,10 @@ class CityRepository extends AbstractEntityRepository implements CityRepositoryI
      */
     private $entityRepository;
 
+    /**
+     * CityRepository constructor.
+     * @param EntityManagerInterface $entityManager
+     */
     public function __construct(EntityManagerInterface $entityManager)
     {
         parent::__construct($entityManager);
@@ -24,6 +28,10 @@ class CityRepository extends AbstractEntityRepository implements CityRepositoryI
         $this->entityRepository = $entityManager->getRepository(City::class);
     }
 
+    /**
+     * @param string $name
+     * @return City|null
+     */
     public function findByName(string $name): ?City
     {
         return $this->entityRepository->findOneBy(['name' => $name]);

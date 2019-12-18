@@ -13,9 +13,13 @@ interface YearRepositoryInterface extends AbstractEntityRepositoryInterface
     public function save(Year $year): void;
 
     /**
-     * @throws ResourceNotFoundException
+     * @param int $name
+     * @return Year|null
      */
-    public function findByName(string $name): ?Year;
+    public function findByName(int $name): ?Year;
 
+    /**
+     * @return array|null
+     */
     public function findAllDistinct(): ?array;
 }

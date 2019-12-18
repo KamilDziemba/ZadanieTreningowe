@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Attractions\Application\Service;
 
 use App\Attractions\Application\Model\ImportData;
@@ -58,6 +60,14 @@ class AttractionService
 
     /**
      * AttractionService constructor.
+     * @param CityRepository $cityRepository
+     * @param YearRepository $yearRepository
+     * @param StreetRepository $streetRepository
+     * @param AttractionRepository $attractionRepository
+     * @param AttractionFactory $attractionFactory
+     * @param StreetFactory $streetFactory
+     * @param CityFactory $cityFactory
+     * @param YearFactory $yearFactory
      */
     public function __construct(
         CityRepository $cityRepository,
@@ -68,7 +78,8 @@ class AttractionService
         StreetFactory $streetFactory,
         CityFactory $cityFactory,
         YearFactory $yearFactory
-    ) {
+    )
+    {
         $this->cityRepository = $cityRepository;
         $this->yearRepository = $yearRepository;
         $this->streetRepository = $streetRepository;
@@ -80,9 +91,10 @@ class AttractionService
     }
 
     /**
+     * @param ImportData $importData
+     * @return Attractions
      * @throws InvalidArgumentException
-     * @throws \Doctrine\ORM\NoResultException
-     * @throws \Doctrine\ORM\NonUniqueResultException
+     * @throws \App\Shared\Exception\ResourceNotFoundException
      */
     public function prepareAndCreateAttraction(ImportData $importData): Attractions
     {

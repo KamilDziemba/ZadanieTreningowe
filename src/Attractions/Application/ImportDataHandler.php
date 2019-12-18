@@ -32,12 +32,20 @@ class ImportDataHandler
      */
     private $logger;
 
+    /**
+     * ImportDataHandler constructor.
+     * @param ExcelDataReader $importDataReader
+     * @param AttractionService $attractionService
+     * @param EntityManagerInterface $entityManager
+     * @param LoggerInterface $logger
+     */
     public function __construct(
         ExcelDataReader $importDataReader,
         AttractionService $attractionService,
         EntityManagerInterface $entityManager,
         LoggerInterface $logger
-    ) {
+    )
+    {
         $this->importDataReader = $importDataReader;
         $this->attractionService = $attractionService;
         $this->entityManager = $entityManager;

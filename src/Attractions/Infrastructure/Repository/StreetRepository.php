@@ -17,6 +17,10 @@ class StreetRepository extends AbstractEntityRepository implements StreetReposit
      */
     private $entityRepository;
 
+    /**
+     * StreetRepository constructor.
+     * @param EntityManagerInterface $entityManager
+     */
     public function __construct(EntityManagerInterface $entityManager)
     {
         parent::__construct($entityManager);
@@ -24,11 +28,19 @@ class StreetRepository extends AbstractEntityRepository implements StreetReposit
         $this->entityRepository = $entityManager->getRepository(Street::class);
     }
 
+    /**
+     * @param string $name
+     * @return Street|null
+     */
     public function findByName(string $name): ?Street
     {
         return $this->entityRepository->findOneBy(['name' => $name]);
     }
 
+    /**
+     * @param string|null $city
+     * @return array|null
+     */
     public function findAllDistinct(string $city = null): ?array
     {
         $qb = $this->entityManager

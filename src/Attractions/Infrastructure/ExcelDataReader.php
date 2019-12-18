@@ -16,6 +16,7 @@ class ExcelDataReader
 
     /**
      * ExcelDataReader constructor.
+     * @param ImportDataMapper $importDataMapper
      */
     public function __construct(ImportDataMapper $importDataMapper)
     {
@@ -23,9 +24,11 @@ class ExcelDataReader
     }
 
     /**
+     * @param string $filePath
+     * @return array
+     * @throws InvalidFileContentException
      * @throws \PHPExcel_Exception
      * @throws \PHPExcel_Reader_Exception
-     * @throws InvalidFileContentException
      */
     public function read(string $filePath): array
     {
@@ -48,6 +51,10 @@ class ExcelDataReader
         return $importDataArray;
     }
 
+    /**
+     * @param array $array
+     * @return array
+     */
     private function mapKeysWithHeadings(array $array): array
     {
         $headings = array_shift($array);

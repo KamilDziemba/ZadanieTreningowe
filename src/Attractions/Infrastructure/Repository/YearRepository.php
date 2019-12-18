@@ -24,7 +24,11 @@ class YearRepository extends AbstractEntityRepository implements YearRepositoryI
         $this->entityRepository = $entityManager->getRepository(Year::class);
     }
 
-    public function findByName(string $name): ?Year
+    /**
+     * @param int $name
+     * @return Year|null
+     */
+    public function findByName(int $name): ?Year
     {
         return $this->entityRepository->findOneBy(['name' => $name]);
     }

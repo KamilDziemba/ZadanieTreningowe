@@ -41,6 +41,10 @@ class ImportExcelFileCommand extends Command
 
     /**
      * ImportExcelFileCommand constructor.
+     * @param string $projectDir
+     * @param ImportDataHandler $importDataHandler
+     * @param MailService $mailService
+     * @param ImportMailingAdapter $importMailingAdapter
      */
     public function __construct(
         string $projectDir,
@@ -64,6 +68,9 @@ class ImportExcelFileCommand extends Command
     }
 
     /**
+     * @param InputInterface $input
+     * @param OutputInterface $output
+     * @return int
      * @throws InvalidArgumentException
      * @throws \App\Shared\Exception\InvalidFileContentException
      * @throws \Doctrine\ORM\ORMException

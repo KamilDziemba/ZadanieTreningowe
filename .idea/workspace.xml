@@ -1,58 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/Attractions/Domain/Repository/YearRepositoryInterface.php" description="public function findAllDistinct(): ?array;" line="19" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="8b9edc87-30e9-45d9-b4a3-302984cc1435" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ZadanieTreningowe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ZadanieTreningowe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/test/swiftmailer.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Application/ImportDataCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Application/ImportDataCommand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Attractions/Application/ImportDataHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Application/ImportDataHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Application/ImportDataMapper/ImportDataMapper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Application/ImportDataMapper/ImportDataMapper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Attractions/Application/ImportMailingAdapter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Application/ImportMailingAdapter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Application/Model/ImportData.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Application/Model/ImportData.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Attractions/Application/Service/AttractionService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Application/Service/AttractionService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Domain/AttractionCreation/AttractionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Domain/AttractionCreation/AttractionFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Domain/AttractionCreation/CityFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Domain/AttractionCreation/CityFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Domain/AttractionCreation/StreetFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Domain/AttractionCreation/StreetFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Domain/AttractionCreation/YearFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Domain/AttractionCreation/YearFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Domain/Entity/Attractions.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Domain/Entity/Attractions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Domain/Entity/City.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Domain/Entity/City.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Domain/Entity/Street.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Domain/Entity/Street.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Domain/Entity/Year.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Domain/Entity/Year.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Domain/Repository/AttractionRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Domain/Repository/AttractionRepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Domain/Repository/CityRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Domain/Repository/CityRepositoryInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Domain/Repository/StreetRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Domain/Repository/StreetRepositoryInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Attractions/Domain/Repository/YearRepositoryInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Domain/Repository/YearRepositoryInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Attractions/Infrastructure/ExcelDataReader.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Infrastructure/ExcelDataReader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/AttractionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/AttractionRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/CityRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/CityRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/StreetRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/StreetRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Attractions/Infrastructure/ImportExcelFileCommand.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/YearRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/YearRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/UI/Http/Web/AttractionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/UI/Http/Web/AttractionsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/UI/Model/Response/Attraction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/UI/Model/Response/Attraction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Attractions/UI/Repository/AttractionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/UI/Repository/AttractionRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20191202103220.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20191202103220.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shared/Exception/InvalidArgumentException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Exception/InvalidArgumentException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shared/Exception/InvalidFileContentException.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Exception/InvalidFileContentException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Shared/Mailing/MailBuilder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Mailing/MailBuilder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Attractions/UI/Command/ImportExcelFileCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Attractions/UI/Command/ImportExcelFileCommand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Shared/Mailing/MailDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Mailing/MailDetails.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Shared/Mailing/MailService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shared/Mailing/MailService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
-    <list id="4b7a79af-8da4-4009-9047-71bed27bbc4c" name="Revert &quot;Update README.md&quot;" comment="Revert &quot;Update README.md&quot;&#10;&#10;This reverts commit 075d8a11">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list id="4b7a79af-8da4-4009-9047-71bed27bbc4c" name="Revert &quot;Update README.md&quot;" comment="Revert &quot;Update README.md&quot;&#10;&#10;This reverts commit 075d8a11" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,20 +44,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Shared/Mailing/MailBuilder.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Attractions/UI/Command/ImportExcelFileCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="573">
+              <caret line="94" column="31" lean-forward="true" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Attractions/Domain/AttractionCreation/YearFactory.php">
+        <entry file="file://$PROJECT_DIR$/src/Attractions/Infrastructure/ExcelDataReader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="608">
+              <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/StreetRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -123,7 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Attractions/Application/ImportDataCommand.php" />
         <option value="$PROJECT_DIR$/config/routes/annotations.yaml" />
         <option value="$PROJECT_DIR$/src/Attractions/Infrastructure/ImportDataReader.php" />
         <option value="$PROJECT_DIR$/src/Attractions/Application/ImportDataFactory/ImportDataFactory.php" />
@@ -134,7 +103,6 @@
         <option value="$PROJECT_DIR$/src/Shared/Exception/ResourceNotFoundException.php" />
         <option value="$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/AttracionRepository.php" />
         <option value="$PROJECT_DIR$/src/Attractions/Domain/Entity/Year.php" />
-        <option value="$PROJECT_DIR$/src/Attractions/Infrastructure/ExcelDataReader.php" />
         <option value="$PROJECT_DIR$/config/services.yaml" />
         <option value="$PROJECT_DIR$/src/Attractions/Domain/Entity/City.php" />
         <option value="$PROJECT_DIR$/src/Attractions/Domain/Entity/Attractions.php" />
@@ -146,25 +114,18 @@
         <option value="$PROJECT_DIR$/src/Attractions/UI/Model/Response/City.php" />
         <option value="$PROJECT_DIR$/templates/homepage.html.twig" />
         <option value="$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/CityRepository.php" />
-        <option value="$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/YearRepository.php" />
-        <option value="$PROJECT_DIR$/src/Attractions/Domain/Repository/YearRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/src/Attractions/UI/Repository/FilterRepository.php" />
         <option value="$PROJECT_DIR$/src/Attractions/UI/Model/Response/Street.php" />
         <option value="$PROJECT_DIR$/src/Attractions/Domain/Repository/StreetRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/src/Attractions/UI/Service/FilterService.php" />
         <option value="$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/StreetRepository.php" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/Attractions/Application/Service/AttractionService.php" />
-        <option value="$PROJECT_DIR$/src/Shared/Mailing/MailDetails.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/Attractions/Application/ImportDataMailingAdapter.php" />
-        <option value="$PROJECT_DIR$/src/Attractions/Application/ImportDataHandler.php" />
         <option value="$PROJECT_DIR$/src/Attractions/Infrastructure/ImportExcelFileCommand.php" />
         <option value="$PROJECT_DIR$/docker-compose.yaml" />
-        <option value="$PROJECT_DIR$/src/Attractions/UI/Command/ImportExcelFileCommand.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Attractions/Application/Model/ImportData.php" />
-        <option value="$PROJECT_DIR$/src/Shared/Mailing/MailService.php" />
         <option value="$PROJECT_DIR$/src/Attractions/UI/Repository/AttractionRepository.php" />
         <option value="$PROJECT_DIR$/src/Attractions/Domain/Repository/AttractionRepositoryInterface.php" />
         <option value="$PROJECT_DIR$/src/Attractions/UI/Http/Web/AttractionsController.php" />
@@ -174,6 +135,15 @@
         <option value="$PROJECT_DIR$/src/Attractions/Domain/AttractionCreation/StreetFactory.php" />
         <option value="$PROJECT_DIR$/src/Attractions/Domain/AttractionCreation/AttractionFactory.php" />
         <option value="$PROJECT_DIR$/src/Shared/Mailing/MailBuilder.php" />
+        <option value="$PROJECT_DIR$/src/Shared/Mailing/MailDetails.php" />
+        <option value="$PROJECT_DIR$/src/Attractions/UI/Command/ImportExcelFileCommand.php" />
+        <option value="$PROJECT_DIR$/src/Attractions/Application/Service/AttractionService.php" />
+        <option value="$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/YearRepository.php" />
+        <option value="$PROJECT_DIR$/src/Attractions/Domain/Repository/YearRepositoryInterface.php" />
+        <option value="$PROJECT_DIR$/src/Shared/Mailing/MailService.php" />
+        <option value="$PROJECT_DIR$/src/Attractions/Application/ImportMailingAdapter.php" />
+        <option value="$PROJECT_DIR$/src/Attractions/Application/ImportDataHandler.php" />
+        <option value="$PROJECT_DIR$/src/Attractions/Infrastructure/ExcelDataReader.php" />
       </list>
     </option>
   </component>
@@ -270,6 +240,47 @@
             <path>
               <item name="ZadanieTreningowe" type="b2602c69:ProjectViewProjectNode" />
               <item name="ZadanieTreningowe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZadanieTreningowe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZadanieTreningowe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Attractions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZadanieTreningowe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZadanieTreningowe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Attractions" type="462c0819:PsiDirectoryNode" />
+              <item name="Infrastructure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZadanieTreningowe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZadanieTreningowe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Attractions" type="462c0819:PsiDirectoryNode" />
+              <item name="Infrastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="Repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZadanieTreningowe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZadanieTreningowe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Attractions" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZadanieTreningowe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZadanieTreningowe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Attractions" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
+              <item name="Command" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ZadanieTreningowe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ZadanieTreningowe" type="462c0819:PsiDirectoryNode" />
               <item name="var" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -339,22 +350,22 @@
       <workItem from="1575206358568" duration="50419000" />
       <workItem from="1575382534050" duration="6037000" />
       <workItem from="1575899556334" duration="1209000" />
-      <workItem from="1576578944272" duration="3661000" />
+      <workItem from="1576578944272" duration="4475000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70118000" />
+    <option name="totallyTimeSpent" value="70932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1179" width="2880" height="1582" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26647565" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26647565" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969558" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32902735" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -362,7 +373,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49964184" visible="true" weight="0.24696049" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49964184" weight="0.24696049" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50035816" side_tool="true" weight="0.7006079" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -422,13 +433,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Attractions/Domain/Entity/City.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Shared/Domain/Repository/AbstractEntityRepositoryInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
@@ -509,23 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/YearRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
-          <folding>
-            <element signature="e#87#126#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Attractions/Domain/Repository/YearRepositoryInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Attractions/Domain/Repository/CityRepositoryInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="725">
@@ -556,20 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/StreetRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="859">
-          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/Mailing/MailDetails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="51" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1276">
@@ -593,33 +566,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.docker/apache/Dockerfile">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Attractions/Infrastructure/ExcelDataReader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Attractions/Application/ImportDataHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="68" column="68" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="68" />
-          <folding>
-            <element signature="e#74#123#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Attractions/Application/Service/AttractionService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding>
-            <element signature="e#57#106#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/AbstractController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -645,24 +591,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Attractions/UI/Command/ImportExcelFileCommand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2146">
-          <caret line="83" column="52" lean-forward="true" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Attractions/Application/ImportMailingAdapter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -680,13 +612,6 @@
           <folding>
             <element signature="e#73#128#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shared/Mailing/MailService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -711,13 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Attractions/Domain/AttractionCreation/YearFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Attractions/Domain/AttractionCreation/StreetFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="725">
@@ -739,10 +657,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shared/Mailing/MailDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Shared/Mailing/MailBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="406">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Attractions/Domain/Repository/YearRepositoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Attractions/Application/Service/AttractionService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2871">
+          <caret line="109" column="47" selection-start-line="109" selection-start-column="47" selection-end-line="109" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/YearRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+          <folding>
+            <element signature="e#87#126#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Attractions/Domain/AttractionCreation/YearFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shared/Mailing/MailService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="33" column="78" selection-start-line="33" selection-start-column="78" selection-end-line="33" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Attractions/Application/ImportMailingAdapter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Attractions/Application/ImportDataHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-558">
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Attractions/UI/Command/ImportExcelFileCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="94" column="31" lean-forward="true" selection-start-line="94" selection-start-column="31" selection-end-line="94" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Attractions/Infrastructure/ImportExcelFileCommand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Attractions/Infrastructure/ExcelDataReader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Attractions/Infrastructure/Repository/StreetRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>

@@ -30,6 +30,7 @@ class MailService
     }
 
     /**
+     * @param MailDetails $mailDetails
      * @throws \Symfony\Component\Mailer\Exception\TransportExceptionInterface
      */
     public function sendEmail(MailDetails $mailDetails)
